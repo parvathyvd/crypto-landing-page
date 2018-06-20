@@ -85,3 +85,27 @@ ul li:nth-child(3){
     top: 155px;
     z-index: 0;
 }
+
+
+
+@media only screen and(max-width: 800px){
+
+    .container{
+        align-content: center;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2,1fr);
+        height: 100vh;
+        margin: 0 50px;
+        grid-row-gap: 1rem;
+    } 
+    .left{
+        grid-row: 1/2;
+        justify-items: center;
+        align-self: center;
+    }
+    .right{
+        grid-row: 2/3;
+    }
+
+}

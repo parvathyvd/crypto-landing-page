@@ -158,6 +158,24 @@ ul li:nth-child(3) {
   top: 155px;
   z-index: 0; }
 
+@media only screen and (max-width: 800px) {
+  .container {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+    margin: 0 50px;
+    grid-row-gap: 1rem; }
+  .left {
+    grid-row: 1/2;
+    justify-items: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .right {
+    grid-row: 2/3; } }
+
 html {
   /* Setting font-size to 62.5% allows 1rem to be 10px */
   font-size: 62.5%; }
